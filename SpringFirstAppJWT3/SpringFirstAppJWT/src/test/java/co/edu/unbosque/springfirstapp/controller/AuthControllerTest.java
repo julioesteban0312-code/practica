@@ -66,6 +66,8 @@ import org.springframework.security.core.Authentication;
     loginRequest.setUsername("testuser");
     loginRequest.setPassword("password");
 
+    //Hola como estas?
+    
     // Llamar al endpoint de inicio de sesión
     ResponseEntity<?> response = authController.login(loginRequest);
 
