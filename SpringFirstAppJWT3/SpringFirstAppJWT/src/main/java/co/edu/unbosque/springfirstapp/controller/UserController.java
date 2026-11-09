@@ -126,7 +126,7 @@ public class UserController {
     int status = userServ.create(newUser);
 
     if (status == 0) {
-      return new ResponseEntity<>("Usuario creado exitosamente", HttpStatus.CREATED);
+      return new ResponseEntity<>("Usuario creado exitosamente, te felicito por haberlo creado", HttpStatus.CREATED);
     } else {
       return new ResponseEntity<>(
           "Error al crear el usuario, posiblemente el nombre de usuario ya está en uso",
